@@ -1,0 +1,307 @@
+body{
+    background-color: lightgrey;
+
+    @media(min-width: 768px){
+        background-color: antiquewhite;
+    }
+}
+.titulo{
+    background-image: url(../img/taller-mecanicocel.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 200px;
+    margin-bottom:50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    @media(min-width: 768px){
+        background-image: url(../img/taller-mecanico1.jpg);
+        line-height: 550px;
+        height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom:50px;
+    }
+}
+.info{
+    padding: 4%;
+    margin: 3%;
+    font-family: 'Roboto', sans-serif;
+    border: solid;
+
+    @media(min-width: 768px){
+        text-align: center;
+    }
+
+    @media(min-width: 1024px){
+        padding-top: 5%;
+    }
+}
+.video{
+    padding-top: 5%;
+    width: auto;
+    height: auto;
+
+    @media(min-width: 1024px){
+        width: 800px;
+        height: 600px;
+    }
+}
+.nosotros__trabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+
+    @media(min-width: 1024px){  
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.6fr 1.1fr 1.1fr 1.1fr 1.1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "title1 title1"
+        "parrafo photo1"
+        "photo2 parrafo1"
+        "parrafo2 parrafo2"
+        "photo3 photo4"; 
+        justify-content: center; 
+        align-content: center; 
+        justify-items: center; 
+        align-items: center;
+    }
+    .title1 { 
+        grid-area: title1; 
+    }
+    .parrafo { 
+        grid-area: parrafo;
+    }
+    .photo1 {
+        grid-area: photo1; 
+        padding: 2%;
+    }
+    .photo2 { 
+        grid-area: photo2; 
+        padding: 2%;
+    }
+    .parrafo1 { 
+        grid-area: parrafo1; 
+    }
+    .parrafo2 { 
+        grid-area: parrafo2; 
+    }
+    .photo3 { 
+        grid-area: photo3; 
+        padding: 2%;
+    }
+    .photo4 { 
+        grid-area: photo4; 
+        padding: 2%;
+    }
+}
+.service{  
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: center;  
+        
+    @media(min-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "title title title"
+        "figure1 figure2 figure3"
+        "figcaption1 figcaption2 figcaption3"
+        "figure4 figure5 figure6"
+        "figcaption4 figcaption5 figcaption6";
+        }
+    .title{ 
+        grid-area: title;
+        padding: 3%;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    .figure1{ 
+        grid-area: figure1;
+    }
+    .figure2{ 
+        grid-area: figure2; 
+    }
+    .figure3{ 
+        grid-area: figure3; 
+    }
+    .figcaption1{ 
+        grid-area: figcaption1; 
+        margin: 2%;
+    }
+    .figcaption2{ 
+        grid-area: figcaption2; 
+        margin: 2%;
+    }
+    .figcaption3{ 
+        grid-area: figcaption3;
+        margin: 2%;
+    }
+    .figure4{ 
+        grid-area: figure4; 
+    }
+    .figure5{ 
+        grid-area: figure5; 
+    }
+    .figure6{ 
+        grid-area: figure6; 
+    }
+    .figcaption4{ 
+        grid-area: figcaption4; 
+        margin: 2%;
+    }
+    .figcaption5{ 
+        grid-area: figcaption5; 
+        margin: 2%;
+    }
+    .figcaption6{ 
+        grid-area: figcaption6; 
+        margin: 2%;
+    }
+}
+.seguros{
+    padding: 3%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    @media(min-width: 1024px){
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.seguros1{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: 500px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media(min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-evenly;
+    }
+}
+.seguros2{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: 500px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media(min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-evenly;
+        margin-top: 4%;
+    }
+}
+.imagen__logo{
+    height: 300px;
+    width: 300px;
+
+    @media(min-width: 500px){
+        height: 100px;
+        width: 100px;
+    }
+
+    @media(min-width: 1024px){
+        height: auto;
+        width: auto;
+    }
+}
+.contacto{
+    padding: 3%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    @media(min-width: 1024px){
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.ubicacion2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    padding: 3%;
+
+    @media(min-width: 1024px){
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.ubicacion3{
+    padding-top: 5%;
+    margin: 3%;
+    width: auto;
+    height: auto;
+
+    @media(min-width: 500px){
+        height: 450px;
+        width: 500px;
+    }
+
+    @media(min-width: 768px){
+        height: 800px;
+        width: 768px;
+    }
+
+    @media(min-width: 1024px){
+        width: 600px;
+        height: 400px;
+        padding: 0%;
+    }
+}
+.hoy{
+    font-family: 'Roboto', sans-serif;
+    padding: 2%;
+    text-align: center;
+
+    @media(min-width: 1024px){
+        text-align: center;
+        margin-bottom: 5%;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.formulario{
+    padding: 3%;
+    margin: 3%;
+
+    @media(min-width: 1024px){
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+}
